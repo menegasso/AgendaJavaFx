@@ -9,11 +9,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-/**
- * FXML Controller class
- *
- * @author tadt
- */
 public class TipoContatoController implements Initializable {
 
     @FXML

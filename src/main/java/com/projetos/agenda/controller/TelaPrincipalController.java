@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.projetos.agenda.controller;
 
 import java.net.URL;
@@ -14,10 +10,6 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.ImageView;
 
-/**
- *
- * @author tadt
- */
 public class TelaPrincipalController implements Initializable {
 
     @FXML
