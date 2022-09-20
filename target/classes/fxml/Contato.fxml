@@ -53,11 +53,12 @@
          </children></AnchorPane>
       <AnchorPane layoutX="212.0" layoutY="267.0" prefHeight="523.0" prefWidth="606.0" style="-fx-background-color: #008b8b; -fx-border-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="267.0">
          <children>
+            <TextField fx:id="tfPesquisa" layoutX="63.0" layoutY="114.0" onAction="#pesquisar" style="-fx-background-radius: 20;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="90.0" />
             <HBox alignment="CENTER" layoutX="4.0" layoutY="4.0" prefHeight="72.0" prefWidth="602.0" style="-fx-background-color: #eeeeeb;" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="3.0">
                <children>
                   <Button fx:id="btnNovo" mnemonicParsing="false" onAction="#btnNovo" prefHeight="55.0" prefWidth="118.0" text="Novo">
                      <graphic>
-                        <ImageView fx:id="btnNovo" fitHeight="24.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="29.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../icons/novo.png" />
                            </image>
@@ -90,8 +91,7 @@
                   </Button>
                </children>
             </HBox>
-            <TextField fx:id="tfPesquisa" layoutX="63.0" layoutY="114.0" onAction="#pesquisar" style="-fx-background-radius: 20;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="90.0" />
-            <TableView fx:id="tfPesquisa" layoutX="5.0" layoutY="134.0" prefHeight="354.0" prefWidth="630.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="133.0" />
+            <TableView fx:id="tableView" layoutX="2.0" layoutY="126.0" prefHeight="397.0" prefWidth="604.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="125.0" />
          </children>
       </AnchorPane>
    </children>

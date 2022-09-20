@@ -34,7 +34,7 @@
                     <children>
                         <Button fx:id="btnNovo" mnemonicParsing="false" onAction="#btnNovo" prefHeight="55.0" prefWidth="118.0" text="Novo">
                             <graphic>
-                                <ImageView fx:id="btnNovo" fitHeight="24.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fitHeight="29.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../icons/novo.png" />
                                     </image>

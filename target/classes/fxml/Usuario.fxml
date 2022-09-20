@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="577.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="com.projetos.agenda.controller.UsuarioController">
+<AnchorPane id="AnchorPane" prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetos.agenda.controller.UsuarioController">
     <children>
         <HBox alignment="CENTER" layoutY="7.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #00b6b6; -fx-border-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
@@ -27,7 +27,7 @@
             <children>
                 <TextField fx:id="tfId" disable="true" editable="false" layoutX="14.0" layoutY="21.0" promptText="Id" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="427.0" />
                 <TextField fx:id="tfDescricao" layoutX="16.0" layoutY="60.0" prefHeight="24.0" prefWidth="547.0" promptText="Usuário" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" />
-            <PasswordField layoutX="14.0" layoutY="101.0" onAction="#pfSenha" promptText="Senha" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="427.0" />
+            <PasswordField layoutX="14.0" layoutY="101.0" onAction="#pfSenha" prefHeight="24.0" prefWidth="171.0" promptText="Senha" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="427.0" />
             </children>
         </AnchorPane>
         <AnchorPane layoutX="212.0" layoutY="190.0" prefHeight="387.0" prefWidth="600.0" style="-fx-background-color: #008b8b; -fx-border-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="190.0">
@@ -36,7 +36,7 @@
                     <children>
                         <Button fx:id="btnNovo" mnemonicParsing="false" onAction="#btnNovo" prefHeight="55.0" prefWidth="118.0" text="Novo">
                             <graphic>
-                                <ImageView fx:id="btnNovo" fitHeight="24.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fitHeight="29.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@../icons/novo.png" />
                                     </image>
@@ -70,7 +70,7 @@
                     </children>
                 </HBox>
                 <TextField fx:id="tfPesquisa" layoutX="63.0" layoutY="114.0" onAction="#pesquisar" style="-fx-background-radius: 20;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="90.0" />
-                <TableView fx:id="tfPesquisa" layoutX="4.0" layoutY="130.0" prefHeight="195.0" prefWidth="600.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="129.0" />
+                <TableView fx:id="tableView" layoutX="2.0" layoutY="126.0" prefHeight="397.0" prefWidth="604.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="125.0" />
             </children>
         </AnchorPane>
     </children>

@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class ContatoController implements Initializable {
@@ -41,6 +42,8 @@ public class ContatoController implements Initializable {
     private ComboBox<?> cbTipoContato;
     @FXML
     private TextField tfNascimento;
+    @FXML
+    private TableView<?> tableView;
 
     /**
      * Initializes the controller class.

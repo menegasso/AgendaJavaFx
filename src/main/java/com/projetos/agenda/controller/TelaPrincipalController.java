@@ -1,14 +1,20 @@
 package com.projetos.agenda.controller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.ImageView;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 public class TelaPrincipalController implements Initializable {
 
@@ -59,23 +65,28 @@ public class TelaPrincipalController implements Initializable {
     }
 
     @FXML
-    private void acessarContato(ActionEvent event) {
+    private void acessarContato(ActionEvent event) throws IOException {
+        abrirFormulario("Contato");
     }
 
     @FXML
-    private void acessarTipoContato(ActionEvent event) {
+    private void acessarTipoContato(ActionEvent event) throws IOException {
+        abrirFormulario("TipoContato");
     }
 
     @FXML
-    private void acessarCidade(ActionEvent event) {
+    private void acessarCidade(ActionEvent event) throws IOException {
+        abrirFormulario("Cidade");
     }
 
     @FXML
-    private void acessarUsuario(ActionEvent event) {
+    private void acessarUsuario(ActionEvent event) throws IOException {
+        abrirFormulario("Usuario");
     }
 
     @FXML
     private void acessarSair(ActionEvent event) {
+
     }
 
     @FXML
@@ -96,6 +107,17 @@ public class TelaPrincipalController implements Initializable {
 
     @FXML
     private void acessarSobreSistema(ActionEvent event) {
+    }
+
+    public void abrirFormulario(String form) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/" + form + ".fxml"));
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.setTitle("Formulário");
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setResizable(false);
+        stage.show();
+
     }
 
 }
