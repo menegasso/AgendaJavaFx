@@ -110,14 +110,16 @@ public class TelaPrincipalController implements Initializable {
     }
 
     public void abrirFormulario(String form) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/" + form + ".fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root));
-        stage.setTitle("Formulário");
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.setResizable(false);
-        stage.show();
-
+        try {
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/" + form + ".fxml"));
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Formulário");
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setResizable(false);
+            stage.show();
+        } catch (Exception e) {
+        }
     }
 
 }
