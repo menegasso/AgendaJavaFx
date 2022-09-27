@@ -46,7 +46,7 @@ public class TipoContatoController implements Initializable {
     private void btnSalvar(ActionEvent event) {
         
         TipoContato tipoContato = new TipoContato();
-        tipoContato.setDescricao(lbTitulo.getText());
+        tipoContato.setDescricao(tfDescricao.getText());
         dao.salvar(tipoContato);
         
     }
