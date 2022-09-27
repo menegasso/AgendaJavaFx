@@ -6,13 +6,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity
+@Table(name = "contato")
 public class Contato implements Serializable {
 
     @Id
@@ -30,6 +33,7 @@ public class Contato implements Serializable {
     private Long numero;
 
     @OneToOne
+    @JoinColumn(name = "id_cidade")
     private Cidade cidade;
 
     @Column(name = "email")
@@ -45,6 +49,7 @@ public class Contato implements Serializable {
     private String telefone2;
 
     @OneToOne
+    @JoinColumn(name = "id_tipo_contato")
     private TipoContato tipoContato;
 
 }
