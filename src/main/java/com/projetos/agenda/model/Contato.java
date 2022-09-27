@@ -1,5 +1,6 @@
 package com.projetos.agenda.model;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,7 +13,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class Contato {
+public class Contato implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,7 +30,7 @@ public class Contato {
     private Long numero;
 
     @OneToOne
-    private Long idCidade;
+    private Cidade cidade;
 
     @Column(name = "email")
     private String email;
@@ -44,6 +45,6 @@ public class Contato {
     private String telefone2;
 
     @OneToOne
-    private Long idTipoContato;
+    private TipoContato tipoContato;
 
 }

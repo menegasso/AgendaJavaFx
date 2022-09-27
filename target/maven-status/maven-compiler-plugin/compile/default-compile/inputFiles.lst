@@ -3,6 +3,8 @@
 /home/tadt/netbeans-workspace/AgendaJavaFx/src/main/java/com/projetos/agenda/controller/TipoContatoController.java
 /home/tadt/netbeans-workspace/AgendaJavaFx/src/main/java/com/projetos/agenda/model/Cidade.java
 /home/tadt/netbeans-workspace/AgendaJavaFx/src/main/java/com/projetos/agenda/controller/CidadeController.java
+/home/tadt/netbeans-workspace/AgendaJavaFx/src/main/java/com/projetos/agenda/dao/TipoContatoDao.java
+/home/tadt/netbeans-workspace/AgendaJavaFx/src/main/java/com/projetos/agenda/dao/ConexaoBanco.java
 /home/tadt/netbeans-workspace/AgendaJavaFx/src/main/java/com/projetos/agenda/model/Contato.java
 /home/tadt/netbeans-workspace/AgendaJavaFx/src/main/java/com/projetos/agenda/controller/ContatoController.java
 /home/tadt/netbeans-workspace/AgendaJavaFx/src/main/java/com/projetos/agenda/model/Usuario.java
