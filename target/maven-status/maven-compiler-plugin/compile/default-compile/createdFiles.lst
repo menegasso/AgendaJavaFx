@@ -1,7 +1,9 @@
 com/projetos/agenda/controller/TelaPrincipalController.class
 com/projetos/agenda/controller/ContatoController.class
+com/projetos/agenda/dao/TipoContatoDao.class
 com/projetos/agenda/model/Cidade.class
 com/projetos/agenda/controller/UsuarioController.class
+com/projetos/agenda/dao/ConexaoBanco.class
 com/projetos/agenda/controller/TipoContatoController.class
 com/projetos/agenda/App.class
 com/projetos/agenda/model/TipoContato.class
