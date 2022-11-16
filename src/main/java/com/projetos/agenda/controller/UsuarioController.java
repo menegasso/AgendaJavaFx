@@ -8,7 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-public class UsuarioController implements Initializable {
+public class UsuarioController implements Initializable, ICadastro {
 
     @FXML
     private TextField tfId;
@@ -29,7 +29,7 @@ public class UsuarioController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
     @FXML
     private void btnNovo(ActionEvent event) {
@@ -50,5 +50,25 @@ public class UsuarioController implements Initializable {
     @FXML
     private void pfSenha(ActionEvent event) {
     }
-    
+
+    @Override
+    public void criarColunasTabela() {
+
+    }
+
+    @Override
+    public void atualizarTabela() {
+
+    }
+
+    @Override
+    public void setarCamposFormulario() {
+
+    }
+
+    @Override
+    public void limparCamposFormulario() {
+
+    }
+
 }

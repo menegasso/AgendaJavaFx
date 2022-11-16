@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetos.agenda.controller.TipoContatoController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetos.agenda.controller.TipoContatoController">
     <children>
         <HBox alignment="CENTER" layoutY="7.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #00b6b6; -fx-border-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
@@ -67,8 +67,8 @@
                         </Button>
                     </children>
                 </HBox>
-                <TextField fx:id="tfPesquisa" layoutX="63.0" layoutY="114.0" onAction="#pesquisar" style="-fx-background-radius: 20;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="90.0" />
-                <TableView fx:id="tableView" layoutX="3.0" layoutY="129.0" prefHeight="278.0" prefWidth="600.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="128.0" />
+                <TextField fx:id="tfPesquisa" layoutX="63.0" layoutY="114.0" onKeyReleased="#filtrarRegistros" promptText="Filtro de Pesquisa" style="-fx-background-radius: 20;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="90.0" />
+                <TableView fx:id="tableView" layoutX="3.0" layoutY="129.0" onMouseClicked="#clicarTabela" prefHeight="278.0" prefWidth="600.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="128.0" />
             </children>
         </AnchorPane>
     </children>

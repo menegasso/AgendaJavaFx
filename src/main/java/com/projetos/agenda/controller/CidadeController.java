@@ -9,7 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 
-public class CidadeController implements Initializable {
+public class CidadeController implements Initializable, ICadastro {
 
     @FXML
     private TextField tfId;
@@ -34,7 +34,7 @@ public class CidadeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
     @FXML
     private void btnNovo(ActionEvent event) {
@@ -51,5 +51,25 @@ public class CidadeController implements Initializable {
     @FXML
     private void pesquisar(ActionEvent event) {
     }
-    
+
+    @Override
+    public void criarColunasTabela() {
+
+    }
+
+    @Override
+    public void atualizarTabela() {
+
+    }
+
+    @Override
+    public void setarCamposFormulario() {
+
+    }
+
+    @Override
+    public void limparCamposFormulario() {
+
+    }
+
 }

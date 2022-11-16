@@ -51,5 +51,9 @@ public class Contato implements Serializable {
     @OneToOne
     @JoinColumn(name = "id_tipo_contato")
     private TipoContato tipoContato;
+    
+    @OneToOne
+    @JoinColumn(name = "id_usuario")
+    private Usuario usuario;
 
 }

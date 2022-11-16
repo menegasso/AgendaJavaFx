@@ -10,7 +10,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class ContatoController implements Initializable {
+public class ContatoController implements Initializable, ICadastro {
 
     @FXML
     private TextField tfId;
@@ -51,7 +51,7 @@ public class ContatoController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
     @FXML
     private void btnNovo(ActionEvent event) {
@@ -68,5 +68,25 @@ public class ContatoController implements Initializable {
     @FXML
     private void pesquisar(ActionEvent event) {
     }
-    
+
+    @Override
+    public void criarColunasTabela() {
+
+    }
+
+    @Override
+    public void atualizarTabela() {
+
+    }
+
+    @Override
+    public void setarCamposFormulario() {
+
+    }
+
+    @Override
+    public void limparCamposFormulario() {
+
+    }
+
 }

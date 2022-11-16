@@ -20,10 +20,10 @@ public class Usuario implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
-    
+
     @Column(name = "descricao", nullable = false)
     private String descricao;
-    
+
     @Column(name = "senha", nullable = false)
     private String senha;
 
