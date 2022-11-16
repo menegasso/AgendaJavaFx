@@ -14,10 +14,10 @@ public class ConexaoBanco {
     private static SessionFactory buildSessionFactory(){
         config = new Configuration().configure();
         config.setProperty("hibernate.connection.username", "root");
-        config.setProperty("hibernate.connection.password", "root1234");
+        config.setProperty("hibernate.connection.password", "");
         config.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/agenda");
-        config.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
-        config.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
+        config.setProperty("hibernate.connection.driver_class", "com.mysql.cj.jdbc.Driver");
+        config.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
         config.setProperty("hibernate.hbm2ddl.auto", "update");
         config.setProperty("hibernate.show_sql", "true");
         config.setProperty("hibernate.format_sql", "true");
