@@ -1,3 +1,3 @@
 # AgendaJavaFx
 
-Projeto de Criação de uma Agenda com as tecnologias JavaFx, Css, Hibernate, Maven e MySQL.
+Project Agenda with JavaFx, CSS, Hibernate, Maven and MySQL technologies.
